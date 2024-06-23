@@ -1,0 +1,277 @@
+
+*{
+	padding: 0;
+	margin: 0;
+  	box-sizing: border-box;
+ 	font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
+	
+}
+
+
+header{
+	opacity: 80%;
+	border-bottom-left-radius:50px ;
+	border-bottom-right-radius: 0;
+    position: absolute;
+	width: 75%;
+	padding : 20px 30px;
+	display: flex;
+	justify-content: space-between;	
+    top : 0%;
+    right: 0px;
+	height: 12%;
+	background: #2a9662;
+	z-index: 1;
+	/*position: fixed;*/
+    
+}
+.logo{
+	position: relative;
+	margin-left: 20px;
+
+}
+
+.navigation a{
+
+    position: relative;
+    font-family:'Courier New', Courier, monospace;
+	color: #ffffff;
+	text-decoration: none;
+	margin-left: 20px;
+    margin-right: 20px;
+    font-size: 150%;
+	font-weight:500;
+
+}
+
+
+.btnUser{
+   
+    
+    margin-top: -10px;
+	cursor: pointer;
+    border-radius: 100px;
+    border-width: 3px;
+    width: 45px;
+    height: 47px;
+}
+
+
+.navigation a::after{
+	content:'';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width :100%;
+	height: 3px;
+	border-radius: 5px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .6s;
+	background: rgb(20, 83, 39);
+	
+}
+
+.navigation a:hover::after {
+	transform-origin: left;
+	transform: scale(1); 
+
+}
+
+
+#topic1
+{
+	font-family:'Times New Roman', Times, serif;
+	font-size:90px;
+	text-align: center;
+	opacity: .2;
+	font-weight: 100;
+	user-select: none;
+	margin-top: -50px;
+}
+
+#dis1
+{
+	position:absolute;
+	margin-left: 6%;
+	font-family:'Times New Roman', Times, serif;
+	font-size:90px;
+	z-index: 1 ;
+	width: 700px;
+	font-weight: 100;
+	margin-top: 5%;
+	color:  rgb(40, 40, 40);
+	font-style: italic;
+	user-select: none;
+}
+
+
+.slideshow-container {
+	border-radius: 10px;
+	position: relative;
+	width: 800px;
+	height: 500px;
+	margin-left: 40%;
+	overflow: hidden;
+  }
+  
+  .slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+  }
+  
+  .slide.active {
+	opacity: 1;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+  }
+  
+  .slide img {
+	width: 100%;
+	height: 100%;
+  }
+
+
+.rooms {
+	
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap ;
+	margin: 5% 1.5% 5% 1.5%;
+	
+}
+.rooms .l1 img
+{	
+
+	padding: 20px;
+	display:flex;
+	justify-content:space-around ;
+	width: 400px;
+	height: 350px;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+.rooms .l1 .text
+{
+	margin : 20px 0px 0px 20px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	color: #ffffff;padding: 1px;
+	background-color: rgb(1, 36, 0);
+	border-radius: 5%;
+	opacity: .9;
+	max-width: 120px;
+	font-size: larger;
+	padding: 6px 20px 6px 20px;
+	
+}
+
+
+
+.rooms .l1:hover{
+	transform: scale( 1.01) ;
+	box-shadow: 0 0  20px #0f3b1d;
+	transition: 400ms;
+	border-radius: 25px;
+	text-align: center;
+}
+
+
+.rooms .l1{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+	box-shadow: 0 0 1px #0f3b1d;
+	margin-top: 20px;
+	transform-origin: left;
+	
+}
+
+
+.rooms .l1 p 
+{
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+
+}
+
+.rooms .l1 p img{
+	margin-left: 30px;
+	font-size: 10px;
+	width: 45px;
+	height: 45px;
+	display: inline;
+	scale: 3;
+	
+}
+
+
+#para{
+	
+	font-size: x-large;
+}
+
+.searchBar
+{
+	border: none;
+	position:absolute;
+	margin-top: -150px;
+	margin-left: 80px;
+	z-index: 1;
+
+	
+	}
+
+#searchbar{
+	border-width: 5px;
+	width: 600px;
+	height: 80px;
+	border-radius: 50px;
+	font-size: large;
+	padding: 0px 0px 0px 20px ;
+	background-color: white;
+	border-color: #0f3b1d;
+	user-select: none;
+	overflow: hidden;
+}
+
+#searchBtn{
+	height: 60px;
+	width: 130px;
+	border: none;
+	background: #2a9662;
+	border-radius: 50px;
+	color: #f3f3f3;
+	font-size: larger;
+	margin-left: 20px;
+}
+
+#searchBtn:hover{
+	background-color: #1a6632;
+}
+#searchBtn:active{
+	background-color: #3e8e41;
+	box-shadow: 0 2px #666;
+	transform: translateY(2px);
+
+}
+
+#city{
+	width: 135px;
+	height: 50px;
+	border: none;
+	font-size: larger;
+	margin-left: -300px;
+	user-select: none;
+	text-align: center;
+}

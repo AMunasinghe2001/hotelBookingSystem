@@ -1,0 +1,33 @@
+.table,th,td {
+    border: 1px solid; 
+    width: 50%; 
+  
+}
+
+
+.h1 {
+   display: block;
+   font-size: 2em;
+   margin-top: 0.67em;
+   margin-bottom: 0.67em;
+   font-weight: bold;
+   text-align: center;
+}
+
+
+.p {
+   margin-left: 50px;
+}
+
+
+
+.body{
+    
+   padding-left: 0%;
+  }
+
+.cet {
+   margin: 50px;
+   width:40%;
+   height:50%;
+}

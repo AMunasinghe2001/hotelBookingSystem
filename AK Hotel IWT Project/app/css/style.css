@@ -1,0 +1,233 @@
+/* CSS */
+body {
+  background-color: #f3f3f9;
+  margin: 0;
+  padding: 0;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: #222428;
+  color: #fff;
+  transition: all 0.3s;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#content {
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+}
+#content.active {
+  width: 100%;
+}
+.sidebar-header {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #6e6e6e;
+}
+.sidebar-header img {
+  width: 180px;
+  height; 70px;
+  margin: auto;
+  display: table;
+}
+.container {
+  margin-left: 250px;
+  height: 2500px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 900;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #c2c2c2;
+  height: 50;
+}
+
+.title {
+  float: left;
+  padding: 10px 20px;
+}
+.title p {
+  font-size: 20px;
+  padding: 5px 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.user {
+  float: right;
+  padding-right: 270px;
+}
+.user p {
+  font-size: 16px;
+  padding: 17px 20px;
+  margin: 0;
+  font-weight: 600;
+  color: #222428;
+}
+.user p span {
+  color: #052799;
+}
+.user p span a {
+  text-decoration: none;
+}
+.wapper {
+  width: 100%;
+  height: 500px;
+  display: table;
+  background-color: #fff;
+  padding: 100px 0;
+  z-index: 900;
+}
+
+.myleft {
+  float: left;
+  background-color: #b8b8b8;
+}
+.myright {
+  float: right;
+  background-color: #979797;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+#sidebar ul li a i {
+  padding: 0 10px 0 5px;
+}
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 0.9em;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+#sidebar ul li a:hover {
+  color: #fff;
+  background: #424242;
+}
+
+.form-content {
+  width: 98%;
+  height: 2500px;
+  padding: 10px 0;
+  margin: auto;
+  display: table;
+  background-color: #ffffff;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  display: table;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.col-1 {
+  width: 100%;
+  height: auto;
+  display: table;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.col-2 {
+  width: 50%;
+  height: auto;
+  display: table;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.col-3 {
+  width: 33.3%;
+  height: auto;
+  display: table;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.col-4 {
+  width: 25%;
+  height: auto;
+  display: table;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.lbl {
+  padding: 5px 10px 10px 10px;
+}
+.lbl label {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+.inpt {
+  padding: 5px 10px 10px 10px;
+}
+
+.inpt input {
+  width: 97%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.inpt select{
+  width: 97%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.btn{
+  margin-left: 10px;
+}
+.btn input{
+padding: 10px;
+background-color: #0d1738;
+color: #fff;
+border-radius: 5px;
+}
+.table-view{
+  padding: 5px;
+  background-color: #e1e9e7;
+
+}
+.table-view table{
+  width: 100%;
+  
+}
